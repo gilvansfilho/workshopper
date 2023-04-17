@@ -62,6 +62,11 @@
               <%= @workshop.lab(@workshop.active_labs[id + 1]).name %> <i class="fa fa-arrow-right"></i>
             </a>
           <% end %>
+          <% if id == @workshop.active_labs.length - 1 %>
+            <a href="/" class="btn btn-primary btn-sm pull-right">
+              Dashboard <i class="fa fa-home"></i>
+            </a>
+          <% end %>
         </div>
       </div>
     </div>
